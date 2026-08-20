@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOVALA — La mobilité à portée de main</title>
+<meta name="theme-color" content="#14213D">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MOVALA">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<style>
+  :root{
+    --nuit:#14213D; --nuit-2:#1B2A4E; --phare:#FFB627; --phare-doux:#FFD98C;
+    --laterite:#C1440E; --sable:#F2E9DC; --sable-2:#E9DCC7; --charbon:#1B1B1B;
+    --vert:#3D8361; --gris:#6b6458;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--sable); color:var(--charbon); font-family:'Work Sans',sans-serif; -webkit-font-smoothing:antialiased;}
+  .display{font-family:'Archivo Black',sans-serif;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;}
+  #app{min-height:100vh; padding-bottom:40px;}
+
+  /* topbar */
+  .topbar{
+    background:var(--nuit); color:var(--sable); padding:14px 18px;
+    display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:50;
+  }
+  .brand{font-family:'Archivo Black'; font-size:19px; letter-spacing:.02em; display:flex; align-items:center; gap:6px; text-decoration:none; color:var(--sable);}
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--phare);}
+  .topbar nav{display:flex; gap:6px; font-size:12.5px;}
+  .topbar nav a{padding:7px 10px; border-radius:8px; text-decoration:none; color:#D9D2C4;}
+  .topbar nav a:hover{background:rgba(255,255,255,.08);}
+
+  .banner{padding:10px 16px; font-size:12.5px; text-align:center;}
+  .banner.warn{background:#FFF3D6; color:#8A6100;}
+  .banner.err{background:#FBEAE3; color:var(--laterite);}
+
+  /* hero */
+  .hero{background:radial-gradient(120% 140% at 15% -10%, var(--nuit-2) 0%, var(--nuit) 55%, #0B1428 100%); color:var(--sable); padding:44px 22px 56px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--phare-doux); margin-bottom:14px;}
+  h1.display{font-size:clamp(30px,7vw,46px); line-height:1.05; margin:0 0 14px; max-width:13ch;}
+  h1.display .accent{color:var(--phare);}
+  .hero p.lead{font-size:15.5px; line-height:1.55; max-width:44ch; color:#D9D2C4; margin:0 0 26px;}
+  .hero-grid{display:flex; gap:12px; flex-wrap:wrap;}
+  .card-choice{
+    flex:1; min-width:150px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14);
+    border-radius:16px; padding:18px; text-align:left; cursor:pointer; color:var(--sable); text-decoration:none;
+  }
+  .card-choice:hover{border-color:var(--phare);}
+  .card-choice .ic{font-size:26px; margin-bottom:8px; display:block;}
+  .card-choice b{display:block; font-size:15px; margin-bottom:2px;}
+  .card-choice span{font-size:12px; color:#B9B2A4;}
+  .hero-links{margin-top:18px; display:flex; gap:16px; flex-wrap:wrap; font-size:13px;}
+  .hero-links a{text-decoration:underline; color:var(--phare-doux);}
+
+  section{padding:40px 20px; max-width:640px; margin:0 auto;}
+  .section-head .tag{font-family:'IBM Plex Mono'; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--laterite); display:block; margin-bottom:6px;}
+  .section-head h2{font-family:'Archivo Black'; font-size:22px; margin:0; color:var(--nuit);}
+  .section-head p{color:var(--gris); margin:8px 0 0; font-size:14px; line-height:1.5;}
+  .steps{display:flex; flex-direction:column; gap:12px; margin-top:18px;}
+  .step{display:flex; gap:12px; align-items:flex-start; background:#fff; border:1px solid var(--sable-2); border-radius:14px; padding:14px;}
+  .step .n{width:28px;height:28px;border-radius:50%;background:var(--nuit);color:var(--phare);font-family:'Archivo Black';font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .step p{margin:0; font-size:13.5px; color:var(--charbon); line-height:1.5;}
+
+  /* forms */
+  .form-card{background:#fff; border:1px solid var(--sable-2); border-radius:18px; padding:20px; margin:0 20px 20px;}
+  .form-row{margin-bottom:14px;}
+  label{display:block; font-size:12.5px; font-weight:600; color:var(--nuit); margin-bottom:6px;}
+  input, select, textarea{width:100%; padding:11px 13px; border-radius:10px; border:1px solid var(--sable-2); background:var(--sable); font-family:'Work Sans'; font-size:14.5px; color:var(--charbon);}
+  input:focus, select:focus, textarea:focus{outline:2px solid var(--phare); outline-offset:1px;}
+  .btn{border:none; border-radius:999px; padding:13px 22px; font-family:'Work Sans'; font-weight:600; font-size:14.5px; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:8px; text-decoration:none;}
+  .btn-phare{background:var(--phare); color:var(--nuit);}
+  .btn-ghost{background:transparent; color:var(--sable); border:1px solid rgba(242,233,220,.35);}
+  .btn-ghost.dark{color:var(--nuit); border-color:var(--sable-2);}
+  .btn-danger{background:transparent; color:var(--laterite); border:1px solid #E8C9BC;}
+  .btn-block{width:100%;}
+  .btn-sm{padding:8px 14px; font-size:13px; border-radius:999px;}
+  .msg{font-size:13px; margin-top:10px; display:none; padding:10px 12px; border-radius:10px;}
+  .msg.ok{color:var(--vert); background:#E8F3EC; display:block;}
+  .msg.err{color:var(--laterite); background:#FBEAE3; display:block;}
+  .type-toggle{display:flex; gap:10px;}
+  .type-toggle label{flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:14px 8px; border-radius:12px; border:1.5px solid var(--sable-2); font-weight:700; font-size:13px; cursor:pointer; margin:0; color:var(--gris);}
+  .type-toggle input{display:none;}
+  .type-toggle input:checked + span{color:var(--nuit);}
+  .type-toggle label:has(input:checked){border-color:var(--phare); background:#FFF6E0;}
+  .type-toggle .ic{font-size:22px;}
+
+  /* status */
+  .status-box{background:#fff; border-radius:18px; border:1px solid var(--sable-2); padding:22px; margin:0 20px; text-align:center;}
+  .status-pill{display:inline-flex; align-items:center; gap:7px; padding:7px 14px; border-radius:999px; font-family:'IBM Plex Mono'; font-size:12px; margin-bottom:14px;}
+  .status-pill.attente{background:#FFF3D6; color:#8A6100;}
+  .status-pill.attribuee{background:#E4F5EA; color:var(--vert);}
+  .status-pill.terminee{background:#E4E9FA; color:var(--nuit);}
+  .status-pill.annulee{background:#FBEAE3; color:var(--laterite);}
+  .spin{width:14px;height:14px;border-radius:50%;border:2px solid rgba(138,97,0,.25);border-top-color:#8A6100;animation:spin 1s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .resa-id{font-family:'IBM Plex Mono'; font-size:13px; color:var(--gris); margin-bottom:6px;}
+  .driver-reveal{background:var(--sable); border-radius:14px; padding:16px; margin-top:16px; text-align:left;}
+  .driver-reveal .avatar{width:44px;height:44px;border-radius:50%;background:var(--nuit);color:var(--phare-doux);display:flex;align-items:center;justify-content:center;font-family:'Archivo Black';overflow:hidden;float:left;margin-right:12px;}
+  .driver-reveal .avatar img{width:100%;height:100%;object-fit:cover;}
+
+  /* cards / lists */
+  .list{display:flex; flex-direction:column; gap:10px; margin:0 20px;}
+  .item-card{background:#fff; border:1px solid var(--sable-2); border-radius:14px; padding:14px;}
+  .item-top{display:flex; justify-content:space-between; align-items:flex-start; gap:8px; margin-bottom:6px;}
+  .item-title{font-weight:700; font-size:14.5px;}
+  .item-sub{font-size:12.5px; color:var(--gris); margin-top:2px;}
+  .badge{font-family:'IBM Plex Mono'; font-size:10px; padding:4px 9px; border-radius:999px; white-space:nowrap;}
+  .badge-attente{background:#FFF3D6;color:#8A6100;}
+  .badge-attribuee{background:#E4F5EA;color:var(--vert);}
+  .badge-terminee{background:#E4E9FA;color:var(--nuit);}
+  .badge-annulee{background:#FBEAE3;color:var(--laterite);}
+  .item-actions{display:flex; gap:8px; margin-top:10px; flex-wrap:wrap;}
+  .empty{text-align:center; padding:26px 16px; color:var(--gris); border:1px dashed var(--sable-2); border-radius:14px; font-size:13.5px; margin:0 20px;}
+
+  .stats{display:flex; flex-wrap:wrap; gap:10px; margin:0 20px 18px;}
+  .stat{flex:1; min-width:100px; background:var(--nuit); border-radius:14px; padding:14px; text-align:center; color:var(--sable);}
+  .stat b{display:block; font-family:'Archivo Black'; font-size:19px; color:var(--phare);}
+  .stat span{font-size:10.5px; color:#B9B2A4;}
+
+  .tabs{display:flex; gap:6px; margin:0 20px 18px; overflow-x:auto; padding-bottom:2px;}
+  .tab{padding:9px 15px; border-radius:999px; font-size:12.5px; font-weight:600; white-space:nowrap; cursor:pointer; border:1px solid var(--sable-2); background:#fff; color:var(--gris);}
+  .tab.active{background:var(--nuit); color:var(--phare); border-color:var(--nuit);}
+
+  .toggle-avail{display:flex; align-items:center; justify-content:space-between; background:#fff; border-radius:14px; padding:14px 16px; margin:0 20px 18px; border:1px solid var(--sable-2);}
+  .switch{position:relative; width:46px; height:26px; flex-shrink:0;}
+  .switch input{opacity:0; width:0; height:0;}
+  .slider-sw{position:absolute; inset:0; background:#D8CFBC; border-radius:999px; cursor:pointer; transition:.2s;}
+  .slider-sw:before{content:""; position:absolute; width:20px; height:20px; left:3px; top:3px; background:#fff; border-radius:50%; transition:.2s;}
+  input:checked + .slider-sw{background:var(--vert);}
+  input:checked + .slider-sw:before{transform:translateX(20px);}
+
+  table{width:100%; border-collapse:collapse; font-size:12.5px; background:#fff; border-radius:12px; overflow:hidden;}
+  th,td{padding:9px 10px; text-align:left; border-bottom:1px solid var(--sable-2);}
+  th{background:var(--sable); font-size:11px; text-transform:uppercase; letter-spacing:.03em; color:var(--gris);}
+  .table-wrap{overflow-x:auto; margin:0 20px 18px; border:1px solid var(--sable-2); border-radius:12px;}
+
+  footer{background:var(--nuit); color:#B9B2A4; text-align:center; padding:28px 20px 36px; font-size:12px; margin-top:36px;}
+  footer a{color:var(--phare-doux);}
+
+  .modal-bg{display:none; position:fixed; inset:0; background:rgba(20,33,61,.55); z-index:200; align-items:flex-end; justify-content:center;}
+  .modal-bg.open{display:flex;}
+  .modal{background:#fff; width:100%; max-width:480px; border-radius:20px 20px 0 0; padding:22px 20px 26px; max-height:85vh; overflow-y:auto;}
+  .modal h3{font-family:'Archivo Black'; font-size:17px; color:var(--nuit); margin:0 0 14px;}
+
+  @media(min-width:640px){
+    .modal-bg{align-items:center;}
+    .modal{border-radius:20px;}
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal" id="modalBody"></div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------------- FIREBASE / FIRESTORE LAYER ---------------- */
+const firebaseConfig = {
+  apiKey: "AIzaSyBb20l4IGGVJmwKDFLoMtnj7JNKuhZBmYQ",
+  authDomain: "movala-4e595.firebaseapp.com",
+  projectId: "movala-4e595",
+  storageBucket: "movala-4e595.firebasestorage.app",
+  messagingSenderId: "218295853749",
+  appId: "1:218295853749:web:c9b26739a86cf20e23d4fc"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+window.addEventListener('unhandledrejection', function(e){
+  const box = document.createElement('div');
+  box.style.cssText = 'background:#C1440E;color:#fff;padding:14px 18px;font-family:sans-serif;font-size:13px;position:sticky;top:0;z-index:9999;';
+  box.textContent = 'Erreur de connexion à la base de données : ' + (e.reason && e.reason.message ? e.reason.message : String(e.reason));
+  document.body.prepend(box);
+});
+
+async function getDemandes(){
+  const snap = await db.collection('demandes').get();
+  return snap.docs.map(d => ({ id: d.id, ...d.data() }));
+}
+async function getConducteurs(){
+  const snap = await db.collection('conducteurs').get();
+  return snap.docs.map(d => ({ id: d.id, ...d.data() }));
+}
+async function getConfig(){
+  const ref = db.collection('config').doc('main');
+  const doc = await ref.get();
+  if(doc.exists) return doc.data();
+  const def = { commissionPct: 10, adminPassword: 'movala2026' };
+  await ref.set(def);
+  return def;
+}
+async function saveConfig(v){ await db.collection('config').doc('main').set(v, { merge: true }); }
+
+/* Accepter une course de façon sûre (transaction : évite que 2 conducteurs prennent la même course) */
+async function acceptDemandeTx(demandeId, conducteurId){
+  const ref = db.collection('demandes').doc(demandeId);
+  return db.runTransaction(async (tx) => {
+    const doc = await tx.get(ref);
+    if(!doc.exists) throw new Error('Cette demande n\'existe plus.');
+    if(doc.data().statut !== 'en_attente') throw new Error('DEJA_PRISE');
+    tx.update(ref, { statut: 'attribuee', conducteurId });
+  });
+}
+
+function uid(prefix){ return prefix + Date.now().toString(36).toUpperCase().slice(-5) + Math.random().toString(36).slice(2,4).toUpperCase(); }
+function esc(s){ const d=document.createElement('div'); d.textContent = s==null?'':String(s); return d.innerHTML; }
+function waLink(phone, text){ const digits=(phone||'').replace(/[^0-9]/g,''); return `https://wa.me/${digits}?text=${encodeURIComponent(text)}`; }
+function telLink(phone){ return `tel:${(phone||'').replace(/[^0-9+]/g,'')}`; }
+function fmtDate(ts){ const d=new Date(ts); return d.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'}) + ' ' + d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}); }
+function fcfa(n){ return (Number(n)||0).toLocaleString('fr-FR') + ' FCFA'; }
+
+function readAndCompressImage(file){
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = () => reject(new Error("Impossible de lire l'image."));
+    reader.onload = () => {
+      const img = new Image();
+      img.onerror = () => reject(new Error("Image invalide."));
+      img.onload = () => {
+        const size = 200;
+        const canvas = document.createElement('canvas');
+        canvas.width = size; canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        const scale = Math.max(size / img.width, size / img.height);
+        const w = img.width * scale, h = img.height * scale;
+        ctx.drawImage(img, (size - w) / 2, (size - h) / 2, w, h);
+        resolve(canvas.toDataURL('image/jpeg', 0.72));
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+/* ---------------- MODAL ---------------- */
+const modalBg = document.getElementById('modalBg');
+const modalBody = document.getElementById('modalBody');
+function openModal(html){ modalBody.innerHTML = html; modalBg.classList.add('open'); }
+function closeModal(){ modalBg.classList.remove('open'); modalBody.innerHTML=''; }
+modalBg.addEventListener('click', (e) => { if(e.target === modalBg) closeModal(); });
+
+/* ---------------- ROUTER ---------------- */
+const app = document.getElementById('app');
+let pollTimer = null;
+let activeUnsub = null;
+function stopPoll(){
+  if(pollTimer){ clearInterval(pollTimer); pollTimer = null; }
+  if(activeUnsub){ activeUnsub(); activeUnsub = null; }
+}
+
+function parseHash(){
+  const raw = location.hash.slice(1) || '/';
+  const [path, qs] = raw.split('?');
+  const params = {};
+  if(qs) qs.split('&').forEach(kv => { const [k,v] = kv.split('='); if(k) params[decodeURIComponent(k)] = decodeURIComponent(v||''); });
+  return { path: path || '/', params };
+}
+function navigate(hash){ location.hash = hash; }
+
+async function render(){
+  stopPoll();
+  const { path, params } = parseHash();
+  if(path === '/') return renderHome();
+  if(path === '/client') return renderClientForm(params);
+  if(path === '/client/statut') return renderClientStatut(params);
+  if(path === '/client/historique') return renderClientHistorique(params);
+  if(path === '/conducteur') return renderConducteurAuth(params);
+  if(path === '/conducteur/dashboard') return renderConducteurDashboard(params);
+  if(path === '/admin') return renderAdminAuth(params);
+  if(path === '/admin/dashboard') return renderAdminDashboard(params);
+  if(path === '/contact') return renderContact();
+  return renderHome();
+}
+window.addEventListener('hashchange', render);
+
+function topbar(active){
+  const link = (href, label, key) => `<a href="${href}" style="${active===key?'background:rgba(255,255,255,.1);color:var(--phare-doux);':''}">${label}</a>`;
+  return `
+  <div class="topbar">
+    <a href="#/" class="brand"><span class="dot"></span>MOVALA</a>
+    <nav>
+      ${link('#/conducteur','Conducteur','conducteur')}
+      ${link('#/admin','Admin','admin')}
+    </nav>
+  </div>`;
+}
+
+function footerHtml(){
+  return `<footer><p>MOVALA — La mobilité à portée de main.</p><p>Version de test — Togo</p></footer>`;
+}
+
+function storageWarningBanner(){
+  return '';
+}
+
+/* ---------------- HOME ---------------- */
+function renderHome(){
+  db.collection('stats').doc('visites').set({ count: firebase.firestore.FieldValue.increment(1) }, { merge: true }).catch(()=>{});
+  app.innerHTML = `
+    ${topbar('home')}
+    <div class="hero">
+      <div class="eyebrow">● Réseau local de mobilité</div>
+      <h1 class="display">La mobilité <span class="accent">à portée de main.</span></h1>
+      <p class="lead">Trouvez facilement un conducteur de moto ou de voiture pour vos déplacements, avec des conducteurs vérifiés de votre zone.</p>
+      <div class="hero-grid">
+        <a class="card-choice" href="#/client?type=moto"><span class="ic">🏍️</span><b>Réserver une moto</b><span>Rapide, économique</span></a>
+        <a class="card-choice" href="#/client?type=voiture"><span class="ic">🚗</span><b>Réserver une voiture</b><span>Confortable</span></a>
+      </div>
+      <div class="hero-links">
+        <a href="#comment">Comment ça marche ?</a>
+        <a href="#/conducteur">Devenir conducteur</a>
+        <a href="#/contact">Contact</a>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:20px;">
+        <button type="button" id="installBtn" class="btn btn-ghost">📲 Installer l'application</button>
+        <button type="button" id="shareBtn" class="btn btn-ghost">🔗 Partager MOVALA</button>
+      </div>
+    </div>
+
+    <div class="stats" id="homeStats">
+      <div class="stat"><b id="statDemandes">…</b><span>Demandes en attente</span></div>
+      <div class="stat"><b id="statConducteurs">…</b><span>Conducteurs disponibles</span></div>
+    </div>
+
+    <section id="comment">
+      <div class="section-head">
+        <span class="tag">Simple</span>
+        <h2>Comment ça marche ?</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><p>Choisissez moto ou voiture, indiquez votre départ et votre destination.</p></div>
+        <div class="step"><div class="n">2</div><p>Votre demande est envoyée aux conducteurs disponibles autour de vous.</p></div>
+        <div class="step"><div class="n">3</div><p>Le premier conducteur qui accepte vous est attribué — vous recevez son nom et son numéro.</p></div>
+        <div class="step"><div class="n">4</div><p>Vous le contactez, effectuez le trajet, et payez directement en espèces.</p></div>
+      </div>
+    </section>
+    ${footerHtml()}
+  `;
+  bindInstallButton();
+  bindHomeStats();
+}
+
+let homeStatsUnsubs = [];
+function bindHomeStats(){
+  homeStatsUnsubs.forEach(u => u());
+  homeStatsUnsubs = [];
+  const elDemandes = document.getElementById('statDemandes');
+  const elConducteurs = document.getElementById('statConducteurs');
+  if(!elDemandes || !elConducteurs) return;
+  homeStatsUnsubs.push(
+    db.collection('demandes').where('statut','==','en_attente')
+      .onSnapshot(snap => { elDemandes.textContent = snap.size; }, () => { elDemandes.textContent = '0'; })
+  );
+  homeStatsUnsubs.push(
+    db.collection('conducteurs').where('statut','==','disponible')
+      .onSnapshot(snap => { elConducteurs.textContent = snap.size; }, () => { elConducteurs.textContent = '0'; })
+  );
+}
+
+function openShareModal(){
+  const baseUrl = location.href.split('#')[0];
+  const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(baseUrl)}`;
+  openModal(`
+    <h3>Partager MOVALA</h3>
+    <div style="text-align:center;">
+      <img src="${qrUrl}" alt="QR code MOVALA" style="width:170px;height:170px;border-radius:12px;margin-bottom:12px;">
+      <p style="font-size:12.5px; word-break:break-all; color:var(--gris);">${esc(baseUrl)}</p>
+      <button type="button" class="btn btn-phare btn-block" id="shareCopyBtn" style="margin-top:12px;">Copier le lien</button>
+    </div>
+  `);
+  document.getElementById('shareCopyBtn').addEventListener('click', () => {
+    if(navigator.share){ navigator.share({ title:'MOVALA', text:'Réservez un conducteur avec MOVALA', url: baseUrl }); }
+    else{ navigator.clipboard.writeText(baseUrl).then(() => alert('Lien copié !')); }
+  });
+}
+
+function openSignalModal(role, telephone){
+  openModal(`
+    <h3>Signaler un problème</h3>
+    <p style="font-size:13px; color:var(--gris); margin-top:-6px;">Décrivez brièvement la difficulté rencontrée, ça nous aide à améliorer MOVALA.</p>
+    <form id="signalForm" novalidate>
+      <div class="form-row"><textarea id="signalTexte" rows="3" placeholder="Ex : je n'ai trouvé aucun conducteur après 10 minutes..." required></textarea></div>
+      <button type="submit" class="btn btn-phare btn-block">Envoyer</button>
+      <div class="msg" id="signalMsg"></div>
+    </form>
+  `);
+  document.getElementById('signalForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const msg = document.getElementById('signalMsg'); msg.className='msg';
+    const texte = document.getElementById('signalTexte').value.trim();
+    if(!texte){ msg.className='msg err'; msg.textContent='Merci de décrire le problème.'; return; }
+    try{
+      await db.collection('signalements').add({ role, telephone: telephone||null, texte, createdAt: Date.now() });
+      msg.className='msg ok'; msg.textContent='Merci, votre signalement a été envoyé.';
+      setTimeout(closeModal, 1200);
+    }catch(err){
+      msg.className='msg err'; msg.textContent='Erreur : ' + err.message;
+    }
+  });
+}
+
+/* ---------------- INSTALL BUTTON (shared) ---------------- */
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; });
+function bindInstallButton(){
+  const btn = document.getElementById('installBtn');
+  const shareBtn = document.getElementById('shareBtn');
+  if(shareBtn) shareBtn.addEventListener('click', openShareModal);
+  if(!btn) return;
+  btn.addEventListener('click', async () => {
+    if(deferredPrompt){ deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt = null; return; }
+    const ua = navigator.userAgent || '';
+    const isIOS = /iPhone|iPad|iPod/.test(ua);
+    const isAndroid = /Android/.test(ua);
+    let steps = '';
+    if(isIOS){
+      steps = `<p>1. Appuyez sur l'icône <b>Partager</b> ⬆️ en bas de Safari.</p><p>2. Appuyez sur <b>« Sur l'écran d'accueil »</b>.</p><p>3. Appuyez sur <b>Ajouter</b>.</p>`;
+    }else if(isAndroid){
+      steps = `<p>1. Appuyez sur les <b>trois points ⋮</b> du navigateur.</p><p>2. Choisissez <b>« Ajouter à l'écran d'accueil »</b> ou <b>« Installer »</b>.</p><p>3. Confirmez.</p>`;
+    }else{
+      steps = `<p>Ouvrez le menu de votre navigateur et cherchez <b>« Ajouter à l'écran d'accueil »</b>.</p>`;
+    }
+    openModal(`<h3>Installer MOVALA</h3>${steps}<button type="button" class="btn btn-phare btn-block" onclick="document.getElementById('modalBg').classList.remove('open')" style="margin-top:14px;">Compris</button>`);
+  });
+}
+
+/* ---------------- CONTACT ---------------- */
+function renderContact(){
+  app.innerHTML = `
+    ${topbar('contact')}
+    <section>
+      <div class="section-head"><span class="tag">Contact</span><h2>Nous contacter</h2><p>Pour toute question sur MOVALA, contactez l'équipe directement.</p></div>
+      <div class="steps">
+        <div class="step"><div class="n">📞</div><p>Par téléphone : appelez le numéro affiché dans votre groupe MOVALA.</p></div>
+        <div class="step"><div class="n">💬</div><p>Par WhatsApp : écrivez directement au numéro de contact MOVALA.</p></div>
+      </div>
+    </section>
+    ${footerHtml()}
+  `;
+}
+
+/* ================= CLIENT ================= */
+function renderClientForm(params){
+  const type = params.type === 'voiture' ? 'voiture' : 'moto';
+  app.innerHTML = `
+    ${topbar('client')}
+    ${storageWarningBanner()}
+    <section>
+      <div class="section-head"><span class="tag">Réservation</span><h2>Demander un conducteur</h2><p>Remplissez vos informations, votre demande sera envoyée aux conducteurs disponibles.</p></div>
+    </section>
+    <div class="form-card">
+      <form id="clientForm" novalidate>
+        <div class="form-row">
+          <label>Type de véhicule</label>
+          <div class="type-toggle">
+            <label><input type="radio" name="ctype" value="moto" ${type==='moto'?'checked':''}><span class="ic">🏍️</span><span>Moto</span></label>
+            <label><input type="radio" name="ctype" value="voiture" ${type==='voiture'?'checked':''}><span class="ic">🚗</span><span>Voiture</span></label>
+          </div>
+        </div>
+        <div class="form-row"><label for="cNom">Votre nom</label><input id="cNom" type="text" placeholder="Ex : Ama K." required></div>
+        <div class="form-row"><label for="cTel">Votre numéro de téléphone</label><input id="cTel" type="tel" placeholder="Ex : 90 00 00 00" required></div>
+        <div class="form-row"><label for="cDepart">Point de départ</label><input id="cDepart" type="text" placeholder="Ex : Adidogomé carrefour" required></div>
+        <div class="form-row"><label for="cDest">Destination</label><input id="cDest" type="text" placeholder="Ex : Tokoin marché" required></div>
+        <button type="submit" class="btn btn-phare btn-block">Envoyer la demande</button>
+        <div class="msg" id="clientMsg"></div>
+      </form>
+    </div>
+    <section style="padding-top:0;">
+      <a href="#/client/historique" style="font-size:13px; text-decoration:underline; color:var(--gris);">Voir mes courses précédentes</a>
+    </section>
+    ${footerHtml()}
+  `;
+  document.getElementById('clientForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    const msg = document.getElementById('clientMsg');
+    msg.className = 'msg';
+    const ctype = document.querySelector('input[name="ctype"]:checked').value;
+    const nom = document.getElementById('cNom').value.trim();
+    const tel = document.getElementById('cTel').value.trim();
+    const depart = document.getElementById('cDepart').value.trim();
+    const dest = document.getElementById('cDest').value.trim();
+    if(!nom || !tel || !depart || !dest){
+      msg.className = 'msg err'; msg.textContent = 'Merci de remplir tous les champs.'; return;
+    }
+    try{
+      const id = uid('MV');
+      await db.collection('demandes').doc(id).set({ type: ctype, nom, telephone: tel, depart, destination: dest, statut: 'en_attente', conducteurId: null, prix: null, commission: null, montantConducteur: null, createdAt: Date.now() });
+      navigate(`#/client/statut?id=${encodeURIComponent(id)}&tel=${encodeURIComponent(tel)}`);
+    }catch(err){
+      msg.className = 'msg err'; msg.textContent = "Erreur : " + (err && err.message ? err.message : String(err));
+    }
+  });
+}
+
+async function renderClientStatut(params){
+  const id = params.id;
+  app.innerHTML = `
+    ${topbar('client')}
+    <section><div class="section-head"><span class="tag">Suivi</span><h2>Statut de votre demande</h2></div></section>
+    <div class="status-box" id="statusBox">Chargement…</div>
+    <section style="text-align:center;">
+      <a href="#/client${params.type?`?type=${params.type}`:''}" style="font-size:13px; text-decoration:underline; color:var(--gris);">← Nouvelle demande</a><br><br>
+      <button type="button" id="signalClientBtn" class="btn btn-ghost dark btn-sm">Signaler un problème</button>
+    </section>
+    ${footerHtml()}
+  `;
+  document.getElementById('signalClientBtn').addEventListener('click', () => openSignalModal('client', params.tel));
+  async function draw(d){
+    const box = document.getElementById('statusBox');
+    if(!box) return;
+    if(!d){ box.innerHTML = `<p>Demande introuvable.</p>`; return; }
+    let inner = `<div class="resa-id">Réservation N° ${esc(d.id)}</div>`;
+    if(d.statut === 'en_attente'){
+      inner += `<div class="status-pill attente"><span class="spin"></span> En attente d'un conducteur…</div>
+        <p style="font-size:13.5px;color:var(--gris);">${esc(d.depart)} → ${esc(d.destination)}</p>
+        <button type="button" class="btn btn-danger btn-sm" id="cancelBtn">Annuler la demande</button>`;
+    }else if(d.statut === 'attribuee'){
+      let c = null;
+      if(d.conducteurId){ const cd = await db.collection('conducteurs').doc(d.conducteurId).get(); if(cd.exists) c = { id: cd.id, ...cd.data() }; }
+      inner += `<div class="status-pill attribuee">✓ Conducteur trouvé</div>
+        <p style="font-size:13.5px;color:var(--gris);">${esc(d.depart)} → ${esc(d.destination)}</p>
+        <div class="driver-reveal">
+          <div class="avatar">${c && c.photo ? `<img src="${c.photo}">` : (c ? esc(c.nom.slice(0,2).toUpperCase()) : '?')}</div>
+          <div style="overflow:hidden;">
+            <b>${c ? esc(c.nom) : 'Conducteur'}</b><br>
+            <span style="font-size:12.5px;color:var(--gris);">${c ? esc(c.vehicule||'') : ''}</span>
+          </div>
+          <div style="clear:both; display:flex; gap:8px; margin-top:12px;">
+            <a class="btn btn-sm" style="background:#25D366;color:#fff;" href="${waLink(c?c.telephone:'', 'Bonjour, je suis client MOVALA, réservation '+d.id)}" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-sm btn-ghost dark" href="${telLink(c?c.telephone:'')}">Appeler</a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-danger btn-sm" id="cancelBtn" style="margin-top:14px;">Annuler la demande</button>`;
+    }else if(d.statut === 'terminee'){
+      inner += `<div class="status-pill terminee">Course terminée</div>
+        <p style="font-size:13.5px;color:var(--gris);">${esc(d.depart)} → ${esc(d.destination)}</p>
+        <p style="font-weight:700;">${fcfa(d.prix)}</p>`;
+    }else if(d.statut === 'annulee'){
+      inner += `<div class="status-pill annulee">Demande annulée</div>`;
+    }
+    box.innerHTML = inner;
+    const cb = document.getElementById('cancelBtn');
+    if(cb) cb.addEventListener('click', async () => {
+      if(!confirm('Annuler cette demande ?')) return;
+      await db.collection('demandes').doc(id).update({ statut: 'annulee' });
+    });
+  }
+  const unsub = db.collection('demandes').doc(id).onSnapshot((doc) => {
+    draw(doc.exists ? { id: doc.id, ...doc.data() } : null);
+  });
+  activeUnsub = unsub;
+}
+
+async function renderClientHistorique(params){
+  app.innerHTML = `
+    ${topbar('client')}
+    <section>
+      <div class="section-head"><span class="tag">Historique</span><h2>Mes courses précédentes</h2><p>Entrez votre numéro de téléphone pour retrouver vos demandes.</p></div>
+    </section>
+    <div class="form-card">
+      <div class="form-row"><label for="hTel">Votre numéro</label><input id="hTel" type="tel" placeholder="Ex : 90 00 00 00" value="${esc(params.tel||'')}"></div>
+      <button type="button" id="hSearch" class="btn btn-phare btn-block">Rechercher</button>
+    </div>
+    <div id="hResults"></div>
+    ${footerHtml()}
+  `;
+  async function search(){
+    const tel = document.getElementById('hTel').value.trim();
+    const results = document.getElementById('hResults');
+    if(!tel){ results.innerHTML = ''; return; }
+    const demandes = await getDemandes();
+    const mine = demandes.filter(d => d.telephone.replace(/\s/g,'') === tel.replace(/\s/g,'')).sort((a,b)=>b.createdAt-a.createdAt);
+    if(!mine.length){ results.innerHTML = `<div class="empty">Aucune course trouvée pour ce numéro.</div>`; return; }
+    results.innerHTML = `<div class="list">` + mine.map(d => `
+      <div class="item-card">
+        <div class="item-top">
+          <div><div class="item-title">${esc(d.depart)} → ${esc(d.destination)}</div><div class="item-sub">${d.type==='moto'?'🏍️ Moto':'🚗 Voiture'} · ${fmtDate(d.createdAt)}</div></div>
+          <span class="badge badge-${d.statut === 'en_attente' ? 'attente' : d.statut}">${d.statut.replace('_',' ')}</span>
+        </div>
+        <a href="#/client/statut?id=${encodeURIComponent(d.id)}" style="font-size:12.5px; text-decoration:underline;">Voir le détail</a>
+      </div>
+    `).join('') + `</div>`;
+  }
+  document.getElementById('hSearch').addEventListener('click', search);
+  if(params.tel) search();
+}
+
+/* ================= CONDUCTEUR ================= */
+function renderConducteurAuth(params){
+  app.innerHTML = `
+    ${topbar('conducteur')}
+    ${storageWarningBanner()}
+    <section>
+      <div class="section-head"><span class="tag">Espace conducteur</span><h2>Connexion</h2><p>Entrez votre numéro de téléphone déjà enregistré, ou créez votre compte.</p></div>
+    </section>
+    <div class="form-card">
+      <div class="form-row"><label for="loginTel">Numéro de téléphone</label><input id="loginTel" type="tel" placeholder="Ex : 90 00 00 00"></div>
+      <button type="button" id="loginBtn" class="btn btn-phare btn-block">Se connecter</button>
+      <div class="msg" id="loginMsg"></div>
+    </div>
+    <section style="padding-top:0; text-align:center;">
+      <button type="button" id="showRegister" class="btn btn-ghost dark">+ Créer un compte conducteur</button>
+    </section>
+    <div id="registerZone"></div>
+    ${footerHtml()}
+  `;
+  document.getElementById('loginBtn').addEventListener('click', async () => {
+    const tel = document.getElementById('loginTel').value.trim();
+    const msg = document.getElementById('loginMsg');
+    msg.className = 'msg';
+    if(!tel){ msg.className='msg err'; msg.textContent='Entrez votre numéro.'; return; }
+    const conducteurs = await getConducteurs();
+    const c = conducteurs.find(x => x.telephone.replace(/\s/g,'') === tel.replace(/\s/g,''));
+    if(!c){ msg.className='msg err'; msg.textContent="Numéro non trouvé. Créez d'abord un compte."; return; }
+    if(!c.actif){ msg.className='msg err'; msg.textContent="Votre compte est en attente de validation par l'administrateur."; return; }
+    navigate(`#/conducteur/dashboard?tel=${encodeURIComponent(tel)}`);
+  });
+  document.getElementById('showRegister').addEventListener('click', () => {
+    document.getElementById('registerZone').innerHTML = `
+      <div class="form-card">
+        <form id="regForm" novalidate>
+          <div class="form-row"><label>Nom complet</label><input id="rNom" type="text" required></div>
+          <div class="form-row"><label>Téléphone (WhatsApp)</label><input id="rTel" type="tel" required></div>
+          <div class="form-row"><label>Photo (facultatif)</label><input id="rPhoto" type="file" accept="image/*" capture="environment"></div>
+          <div class="form-row">
+            <label>Type</label>
+            <div class="type-toggle">
+              <label><input type="radio" name="rtype" value="moto" checked><span class="ic">🏍️</span><span>Moto</span></label>
+              <label><input type="radio" name="rtype" value="voiture"><span class="ic">🚗</span><span>Voiture</span></label>
+            </div>
+          </div>
+          <div class="form-row"><label>Informations du véhicule</label><input id="rVehicule" type="text" placeholder="Ex : Moto Sanili rouge, plaque..."></div>
+          <div class="form-row"><label>Zone de travail</label><input id="rZone" type="text" placeholder="Ex : Adidogomé"></div>
+          <button type="submit" class="btn btn-phare btn-block">Créer mon compte</button>
+          <div class="msg" id="regMsg"></div>
+        </form>
+      </div>`;
+    document.getElementById('regForm').addEventListener('submit', async function(e){
+      e.preventDefault();
+      const msg = document.getElementById('regMsg'); msg.className = 'msg';
+      const nom = document.getElementById('rNom').value.trim();
+      const tel = document.getElementById('rTel').value.trim();
+      const type = document.querySelector('input[name="rtype"]:checked').value;
+      const vehicule = document.getElementById('rVehicule').value.trim();
+      const zone = document.getElementById('rZone').value.trim();
+      const photoFile = document.getElementById('rPhoto').files[0];
+      if(!nom || !tel){ msg.className='msg err'; msg.textContent='Nom et téléphone obligatoires.'; return; }
+      try{
+        const conducteurs = await getConducteurs();
+        if(conducteurs.some(c => c.telephone.replace(/\s/g,'') === tel.replace(/\s/g,''))){
+          msg.className='msg err'; msg.textContent='Ce numéro est déjà enregistré.'; return;
+        }
+        let photo = null;
+        if(photoFile) photo = await readAndCompressImage(photoFile);
+        await db.collection('conducteurs').doc(uid('CD')).set({ nom, telephone: tel, photo, type, vehicule, zone, statut: 'hors_ligne', actif: false, createdAt: Date.now() });
+        msg.className='msg ok'; msg.textContent = "Compte créé ! En attente de validation par l'administrateur avant de pouvoir recevoir des courses.";
+      }catch(err){
+        msg.className='msg err'; msg.textContent = "Erreur : " + (err && err.message ? err.message : String(err));
+      }
+    });
+  });
+}
+
+async function renderConducteurDashboard(params){
+  const tel = params.tel;
+  const conducteurs = await getConducteurs();
+  let c = conducteurs.find(x => x.telephone.replace(/\s/g,'') === (tel||'').replace(/\s/g,''));
+  if(!c){ navigate('#/conducteur'); return; }
+
+  function statutLabel(s){
+    if(s === 'disponible') return '🟢 Disponible';
+    if(s === 'en_course') return '🔴 En course';
+    return '⚪ Hors ligne';
+  }
+
+  app.innerHTML = `
+    ${topbar('conducteur')}
+    <section style="padding-bottom:0;">
+      <div class="section-head"><span class="tag">Espace conducteur</span><h2>Bonjour, ${esc(c.nom)}</h2></div>
+    </section>
+    <div class="form-card" id="statutZone">
+      <label style="margin-bottom:10px;">Mon statut</label>
+      <div class="type-toggle" id="statutButtons">
+        <label data-statut="disponible" style="${c.statut==='disponible'?'border-color:var(--phare);background:#FFF6E0;':''}"><span class="ic">🟢</span><span>Disponible</span></label>
+        <label data-statut="en_course" style="opacity:${c.statut==='en_course'?'1':'.4'}; ${c.statut==='en_course'?'border-color:var(--phare);background:#FFF6E0;':''}"><span class="ic">🔴</span><span>En course</span></label>
+        <label data-statut="hors_ligne" style="${c.statut==='hors_ligne'||!c.statut?'border-color:var(--phare);background:#FFF6E0;':''}"><span class="ic">⚪</span><span>Hors ligne</span></label>
+      </div>
+      <p id="statutMsg" style="font-size:12px; color:var(--gris); margin:10px 0 0;">${c.statut==='en_course' ? "Terminez votre course en cours pour changer de statut." : "Appuyez sur Disponible pour recevoir des courses."}</p>
+    </div>
+    <div class="tabs">
+      <div class="tab active" data-tab="demandes">Demandes disponibles <span id="demandesCount" style="display:inline-block; min-width:18px; padding:1px 6px; border-radius:100px; background:var(--laterite); color:#fff; font-size:11px; font-weight:700; margin-left:4px;">0</span></div>
+      <div class="tab" data-tab="cours">Ma course en cours</div>
+      <div class="tab" data-tab="terminees">Terminées</div>
+    </div>
+    <div id="tabContent"></div>
+    <section style="text-align:center; padding-top:8px;">
+      <button type="button" id="signalBtn" class="btn btn-ghost dark btn-sm">Signaler un problème</button>
+      <br><br>
+      <a href="#/conducteur" style="font-size:12.5px; color:var(--gris); text-decoration:underline;">Se déconnecter</a>
+    </section>
+    ${footerHtml()}
+  `;
+
+  document.getElementById('signalBtn').addEventListener('click', () => openSignalModal('conducteur', c.telephone));
+
+  document.querySelectorAll('#statutButtons label').forEach(lbl => lbl.addEventListener('click', async () => {
+    const target = lbl.dataset.statut;
+    if(target === 'en_course') return;
+    if(c.statut === 'en_course'){ alert('Terminez votre course en cours avant de changer de statut.'); return; }
+    await db.collection('conducteurs').doc(c.id).update({ statut: target });
+    c.statut = target;
+    navigate(`#/conducteur/dashboard?tel=${encodeURIComponent(tel)}`);
+    setTimeout(() => location.reload(), 10);
+  }));
+
+  let currentTab = 'demandes';
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    currentTab = t.dataset.tab;
+    setupTab();
+  }));
+
+  let tabUnsub = null;
+  function clearTabUnsub(){ if(tabUnsub){ tabUnsub(); tabUnsub = null; } }
+
+  function drawDemandesList(dispo){
+    const countEl = document.getElementById('demandesCount');
+    if(countEl) countEl.textContent = dispo.length;
+    const zone = document.getElementById('tabContent');
+    if(!zone) return;
+    if(c.statut !== 'disponible'){
+      zone.innerHTML = `<div class="empty">Passez votre statut sur 🟢 Disponible pour voir les demandes.</div>`;
+      return;
+    }
+    zone.innerHTML = !dispo.length ? `<div class="empty">Aucune demande en attente pour l'instant.</div>` : `<div class="list">` + dispo.map(d => `
+      <div class="item-card">
+        <div class="item-top">
+          <div><div class="item-title">${esc(d.depart)} → ${esc(d.destination)}</div><div class="item-sub">${esc(d.nom)} · ${fmtDate(d.createdAt)}</div></div>
+          <span class="badge badge-attente">${d.type}</span>
+        </div>
+        <div class="item-actions">
+          <button type="button" class="btn btn-sm btn-phare" data-accept="${d.id}">Accepter</button>
+          <button type="button" class="btn btn-sm btn-ghost dark" data-refuse="${d.id}">Refuser</button>
+        </div>
+      </div>`).join('') + `</div>`;
+  }
+
+  async function setupTab(){
+    clearTabUnsub();
+    const zone = document.getElementById('tabContent');
+    if(currentTab === 'demandes'){
+      tabUnsub = db.collection('demandes').where('statut','==','en_attente').where('type','==',c.type)
+        .onSnapshot((snap) => { drawDemandesList(snap.docs.map(d=>({id:d.id,...d.data()}))); },
+        () => { drawDemandesList([]); });
+    }else if(currentTab === 'cours'){
+      const demandes = await getDemandes();
+      const mine = demandes.filter(d => d.statut === 'attribuee' && d.conducteurId === c.id);
+      zone.innerHTML = !mine.length ? `<div class="empty">Aucune course en cours.</div>` : `<div class="list">` + mine.map(d => `
+        <div class="item-card">
+          <div class="item-top">
+            <div><div class="item-title">${esc(d.depart)} → ${esc(d.destination)}</div><div class="item-sub">${esc(d.nom)} · ${esc(d.telephone)}</div></div>
+            <span class="badge badge-attribuee">en cours</span>
+          </div>
+          <div class="item-actions">
+            <a class="btn btn-sm" style="background:#25D366;color:#fff;" href="${waLink(d.telephone, 'Bonjour '+d.nom+', votre conducteur MOVALA arrive.')}" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-sm btn-ghost dark" href="${telLink(d.telephone)}">Appeler</a>
+            <button type="button" class="btn btn-sm btn-phare" data-finish="${d.id}">Course terminée</button>
+          </div>
+        </div>`).join('') + `</div>`;
+    }else{
+      const demandes = await getDemandes();
+      const done = demandes.filter(d => d.statut === 'terminee' && d.conducteurId === c.id).sort((a,b)=>b.createdAt-a.createdAt);
+      const total = done.reduce((s,d) => s + (d.montantConducteur||0), 0);
+      zone.innerHTML = `<div class="stats"><div class="stat"><b>${done.length}</b><span>Courses</span></div><div class="stat"><b>${fcfa(total)}</b><span>Gains totaux</span></div></div>` +
+        (!done.length ? `<div class="empty">Aucune course terminée pour l'instant.</div>` : `<div class="list">` + done.map(d => `
+        <div class="item-card">
+          <div class="item-top">
+            <div><div class="item-title">${esc(d.depart)} → ${esc(d.destination)}</div><div class="item-sub">${fmtDate(d.createdAt)}</div></div>
+            <span class="badge badge-terminee">${fcfa(d.montantConducteur)}</span>
+          </div>
+        </div>`).join('') + `</div>`);
+    }
+  }
+  await setupTab();
+  activeUnsub = clearTabUnsub;
+
+  document.getElementById('tabContent').addEventListener('click', async (e) => {
+    const acceptId = e.target.dataset.accept;
+    const refuseId = e.target.dataset.refuse;
+    const finishId = e.target.dataset.finish;
+    if(acceptId){
+      try{
+        await db.runTransaction(async (tx) => {
+          const dRef = db.collection('demandes').doc(acceptId);
+          const cRef = db.collection('conducteurs').doc(c.id);
+          const dDoc = await tx.get(dRef);
+          const cDoc = await tx.get(cRef);
+          if(!dDoc.exists || dDoc.data().statut !== 'en_attente') throw new Error('DEJA_PRISE');
+          if(!cDoc.exists || cDoc.data().statut !== 'disponible') throw new Error('INDISPONIBLE');
+          tx.update(dRef, { statut: 'attribuee', conducteurId: c.id, attribueeAt: Date.now() });
+          tx.update(cRef, { statut: 'en_course' });
+        });
+        c.statut = 'en_course';
+        alert('Course acceptée !');
+        navigate(`#/conducteur/dashboard?tel=${encodeURIComponent(tel)}`);
+        setTimeout(() => location.reload(), 10);
+      }catch(err){
+        if(err.message === 'DEJA_PRISE') alert('Cette course a déjà été prise par un autre conducteur.');
+        else if(err.message === 'INDISPONIBLE') alert('Votre statut a changé, actualisez la page.');
+        else alert('Erreur : ' + err.message);
+      }
+    }else if(refuseId){
+      /* rien à faire, la demande reste visible pour les autres conducteurs */
+    }else if(finishId){
+      const prix = prompt('Montant de la course (FCFA) :');
+      if(prix === null) return;
+      const prixNum = Number(String(prix).replace(/[^0-9]/g,''));
+      if(!prixNum || prixNum <= 0){ alert('Montant invalide.'); return; }
+      const config = await getConfig();
+      const commission = Math.round(prixNum * config.commissionPct / 100);
+      const montantConducteur = prixNum - commission;
+      await db.collection('demandes').doc(finishId).update({ statut: 'terminee', prix: prixNum, commission, montantConducteur });
+      await db.collection('conducteurs').doc(c.id).update({ statut: 'disponible' });
+      c.statut = 'disponible';
+      navigate(`#/conducteur/dashboard?tel=${encodeURIComponent(tel)}`);
+      setTimeout(() => location.reload(), 10);
+    }
+  });
+}
+
+/* ================= ADMIN ================= */
+function renderAdminAuth(){
+  app.innerHTML = `
+    ${topbar('admin')}
+    <section>
+      <div class="section-head"><span class="tag">Espace administrateur</span><h2>Connexion</h2></div>
+    </section>
+    <div class="form-card">
+      <div class="form-row"><label>Mot de passe</label><input id="adminPass" type="password"></div>
+      <button type="button" id="adminLoginBtn" class="btn btn-phare btn-block">Se connecter</button>
+      <div class="msg" id="adminMsg"></div>
+    </div>
+    ${footerHtml()}
+  `;
+  document.getElementById('adminLoginBtn').addEventListener('click', async () => {
+    const pass = document.getElementById('adminPass').value;
+    const msg = document.getElementById('adminMsg'); msg.className='msg';
+    const config = await getConfig();
+    if(pass !== config.adminPassword){ msg.className='msg err'; msg.textContent='Mot de passe incorrect.'; return; }
+    navigate(`#/admin/dashboard?pass=${encodeURIComponent(pass)}`);
+  });
+}
+
+async function renderAdminDashboard(params){
+  const config = await getConfig();
+  if(params.pass !== config.adminPassword){ navigate('#/admin'); return; }
+
+  app.innerHTML = `
+    ${topbar('admin')}
+    <section style="padding-bottom:0;"><div class="section-head"><span class="tag">Administration</span><h2>Tableau de bord MOVALA</h2></div></section>
+    <div class="tabs">
+      <div class="tab active" data-tab="stats">Statistiques du test</div>
+      <div class="tab" data-tab="conducteurs">Conducteurs</div>
+      <div class="tab" data-tab="demandes">Demandes</div>
+      <div class="tab" data-tab="signalements">Signalements</div>
+      <div class="tab" data-tab="partager">Partager</div>
+      <div class="tab" data-tab="reglages">Réglages</div>
+    </div>
+    <div id="adminContent"></div>
+    <section style="text-align:center; padding-top:8px;">
+      <a href="#/admin" style="font-size:12.5px; color:var(--gris); text-decoration:underline;">Se déconnecter</a>
+    </section>
+    ${footerHtml()}
+  `;
+
+  let tab = 'stats';
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active'); tab = t.dataset.tab; draw();
+  }));
+
+  function statutBadge(s){
+    if(s === 'disponible') return '🟢 Disponible';
+    if(s === 'en_course') return '🔴 En course';
+    return '⚪ Hors ligne';
+  }
+
+  async function draw(){
+    const zone = document.getElementById('adminContent');
+    const demandes = await getDemandes();
+    const conducteurs = await getConducteurs();
+
+    if(tab === 'stats'){
+      const visiteSnap = await db.collection('stats').doc('visites').get();
+      const visites = visiteSnap.exists ? (visiteSnap.data().count || 0) : 0;
+      const clientsMap = {};
+      demandes.forEach(d => { clientsMap[d.telephone] = (clientsMap[d.telephone]||0) + 1; });
+      const clientsUniques = Object.keys(clientsMap).length;
+      const clientsRevenus = Object.values(clientsMap).filter(n => n > 1).length;
+      const enAttente = demandes.filter(d=>d.statut==='en_attente').length;
+      const attribuees = demandes.filter(d=>d.statut==='attribuee').length;
+      const terminees = demandes.filter(d=>d.statut==='terminee');
+      const annulees = demandes.filter(d=>d.statut==='annulee').length;
+      const avecAttente = demandes.filter(d => d.attribueeAt && d.createdAt);
+      const attenteMoyenneMin = avecAttente.length ? Math.round(avecAttente.reduce((s,d)=>s+(d.attribueeAt-d.createdAt),0) / avecAttente.length / 60000) : null;
+      zone.innerHTML = `
+        <div class="stats">
+          <div class="stat"><b>${visites}</b><span>Visites du site</span></div>
+          <div class="stat"><b>${demandes.length}</b><span>Demandes totales</span></div>
+          <div class="stat"><b>${clientsUniques}</b><span>Clients uniques</span></div>
+          <div class="stat"><b>${clientsRevenus}</b><span>Clients revenus</span></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>${terminees.length}</b><span>Courses réalisées</span></div>
+          <div class="stat"><b>${annulees}</b><span>Courses annulées</span></div>
+          <div class="stat"><b>${enAttente}</b><span>En attente</span></div>
+          <div class="stat"><b>${attribuees}</b><span>En cours</span></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>${conducteurs.length}</b><span>Conducteurs inscrits</span></div>
+          <div class="stat"><b>${conducteurs.filter(c=>c.actif).length}</b><span>Conducteurs validés</span></div>
+          <div class="stat"><b>${conducteurs.filter(c=>c.statut==='disponible').length}</b><span>Disponibles maintenant</span></div>
+          <div class="stat"><b>${attenteMoyenneMin!==null ? attenteMoyenneMin+' min' : '-'}</b><span>Attente moyenne conducteur</span></div>
+        </div>
+      `;
+    }else if(tab === 'conducteurs'){
+      zone.innerHTML = `
+        <section style="padding-top:0;"><button type="button" id="addConducteurBtn" class="btn btn-phare">+ Ajouter un conducteur</button></section>
+        <div class="table-wrap"><table>
+          <tr><th>Nom</th><th>Tél.</th><th>Type</th><th>Zone</th><th>Statut</th><th>Actions</th></tr>
+          ${conducteurs.map(c => `
+            <tr>
+              <td>${esc(c.nom)}</td><td>${esc(c.telephone)}</td><td>${c.type==='moto'?'🏍️':'🚗'}</td><td>${esc(c.zone||'-')}</td>
+              <td>${c.actif ? '<span class="badge badge-attribuee">validé</span>' : '<span class="badge badge-attente">en attente</span>'}<br><span style="font-size:11px;">${statutBadge(c.statut)}</span></td>
+              <td style="white-space:nowrap;">
+                <button type="button" class="btn btn-sm btn-ghost dark" data-toggle-actif="${c.id}">${c.actif?'Désactiver':'Valider'}</button>
+              </td>
+            </tr>`).join('')}
+        </table></div>
+      `;
+      document.getElementById('addConducteurBtn').addEventListener('click', () => {
+        openModal(`
+          <h3>Ajouter un conducteur</h3>
+          <form id="addCondForm" novalidate>
+            <div class="form-row"><label>Nom</label><input id="acNom" required></div>
+            <div class="form-row"><label>Téléphone</label><input id="acTel" type="tel" required></div>
+            <div class="form-row"><label>Type</label>
+              <div class="type-toggle">
+                <label><input type="radio" name="actype" value="moto" checked><span class="ic">🏍️</span><span>Moto</span></label>
+                <label><input type="radio" name="actype" value="voiture"><span class="ic">🚗</span><span>Voiture</span></label>
+              </div>
+            </div>
+            <div class="form-row"><label>Zone</label><input id="acZone"></div>
+            <button type="submit" class="btn btn-phare btn-block">Ajouter (validé immédiatement)</button>
+            <div class="msg" id="acMsg"></div>
+          </form>`);
+        document.getElementById('addCondForm').addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const msg = document.getElementById('acMsg'); msg.className='msg';
+          const nom = document.getElementById('acNom').value.trim();
+          const telv = document.getElementById('acTel').value.trim();
+          const type = document.querySelector('input[name="actype"]:checked').value;
+          const zone = document.getElementById('acZone').value.trim();
+          if(!nom || !telv){ msg.className='msg err'; msg.textContent='Nom et téléphone requis.'; return; }
+          const list = await getConducteurs();
+          if(list.some(c => c.telephone.replace(/\s/g,'')===telv.replace(/\s/g,''))){ msg.className='msg err'; msg.textContent='Numéro déjà utilisé.'; return; }
+          await db.collection('conducteurs').doc(uid('CD')).set({ nom, telephone: telv, photo:null, type, vehicule:'', zone, statut:'hors_ligne', actif:true, createdAt: Date.now() });
+          closeModal();
+          draw();
+        });
+      });
+      zone.querySelectorAll('[data-toggle-actif]').forEach(btn => btn.addEventListener('click', async (e) => {
+        const id = e.target.dataset.toggleActif;
+        const cond = conducteurs.find(c => c.id === id);
+        if(cond){ await db.collection('conducteurs').doc(id).update({ actif: !cond.actif }); draw(); }
+      }));
+    }else if(tab === 'demandes'){
+      zone.innerHTML = `
+        <div class="table-wrap"><table>
+          <tr><th>Client</th><th>Trajet</th><th>Type</th><th>Statut</th><th>Conducteur</th><th>Actions</th></tr>
+          ${demandes.slice().sort((a,b)=>b.createdAt-a.createdAt).map(d => {
+            const cond = conducteurs.find(c => c.id === d.conducteurId);
+            return `<tr>
+              <td>${esc(d.nom)}<br><span style="color:var(--gris);">${esc(d.telephone)}</span></td>
+              <td>${esc(d.depart)} → ${esc(d.destination)}</td>
+              <td>${d.type==='moto'?'🏍️':'🚗'}</td>
+              <td><span class="badge badge-${d.statut==='en_attente'?'attente':d.statut}">${d.statut.replace('_',' ')}</span></td>
+              <td>${cond ? esc(cond.nom) : (d.statut==='en_attente' ? `<select data-assign="${d.id}"><option value="">Attribuer…</option>${conducteurs.filter(c=>c.actif && c.type===d.type).map(c=>`<option value="${c.id}">${esc(c.nom)}</option>`).join('')}</select>` : '-')}</td>
+              <td>${d.statut!=='terminee' && d.statut!=='annulee' ? `<button type="button" class="btn btn-sm btn-danger" data-cancel="${d.id}">Annuler</button>` : ''}</td>
+            </tr>`;
+          }).join('')}
+        </table></div>
+      `;
+      zone.querySelectorAll('[data-assign]').forEach(sel => sel.addEventListener('change', async (e) => {
+        const id = e.target.dataset.assign; const condId = e.target.value;
+        if(!condId) return;
+        await db.collection('demandes').doc(id).update({ statut: 'attribuee', conducteurId: condId, attribueeAt: Date.now() });
+        await db.collection('conducteurs').doc(condId).update({ statut: 'en_course' });
+        draw();
+      }));
+      zone.querySelectorAll('[data-cancel]').forEach(btn => btn.addEventListener('click', async (e) => {
+        if(!confirm('Annuler cette demande ?')) return;
+        const id = e.target.dataset.cancel;
+        await db.collection('demandes').doc(id).update({ statut: 'annulee' });
+        draw();
+      }));
+    }else if(tab === 'signalements'){
+      const snap = await db.collection('signalements').orderBy('createdAt','desc').get();
+      const items = snap.docs.map(d => ({id:d.id, ...d.data()}));
+      zone.innerHTML = !items.length ? `<div class="empty">Aucun signalement pour l'instant.</div>` : `<div class="list">` + items.map(s => `
+        <div class="item-card">
+          <div class="item-top">
+            <div><span class="badge badge-${s.role==='client'?'attente':'attribuee'}">${s.role}</span></div>
+            <span class="item-sub">${fmtDate(s.createdAt)}</span>
+          </div>
+          <p style="font-size:13.5px; margin:8px 0 4px;">${esc(s.texte)}</p>
+          ${s.telephone ? `<span class="item-sub">Contact : ${esc(s.telephone)}</span>` : ''}
+        </div>`).join('') + `</div>`;
+    }else if(tab === 'partager'){
+      const baseUrl = location.href.split('#')[0];
+      const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(baseUrl)}`;
+      zone.innerHTML = `
+        <div class="form-card" style="text-align:center;">
+          <img src="${qrUrl}" alt="QR code MOVALA" style="width:180px;height:180px;border-radius:12px;margin-bottom:14px;">
+          <p style="font-size:13px; word-break:break-all; color:var(--gris);">${esc(baseUrl)}</p>
+          <button type="button" class="btn btn-phare btn-block" id="copyLinkBtn" style="margin-top:10px;">Copier le lien</button>
+          <p style="font-size:12px; color:var(--gris); margin-top:10px;">Imprimez ce QR code sur vos affiches, ou partagez le lien directement sur WhatsApp et vos statuts.</p>
+        </div>`;
+      document.getElementById('copyLinkBtn').addEventListener('click', () => {
+        navigator.clipboard.writeText(baseUrl).then(() => alert('Lien copié !'));
+      });
+    }else if(tab === 'reglages'){
+      zone.innerHTML = `
+        <div class="form-card">
+          <div class="form-row"><label>Commission MOVALA (%)</label><input id="rgCommission" type="number" min="0" max="100" value="${config.commissionPct}"></div>
+          <div class="form-row"><label>Nouveau mot de passe admin</label><input id="rgPass" type="text" placeholder="Laisser vide pour ne pas changer"></div>
+          <button type="button" id="rgSave" class="btn btn-phare btn-block">Enregistrer</button>
+          <div class="msg" id="rgMsg"></div>
+        </div>`;
+      document.getElementById('rgSave').addEventListener('click', async () => {
+        const msg = document.getElementById('rgMsg'); msg.className='msg';
+        const pct = Number(document.getElementById('rgCommission').value);
+        const newPass = document.getElementById('rgPass').value.trim();
+        const cfg = await getConfig();
+        cfg.commissionPct = isNaN(pct) ? cfg.commissionPct : pct;
+        if(newPass) cfg.adminPassword = newPass;
+        await saveConfig(cfg);
+        msg.className='msg ok'; msg.textContent='Réglages enregistrés.';
+      });
+    }
+  }
+  await draw();
+}
+
+/* init */
+render();
+})();
+</script>
+</body>
+</html>
